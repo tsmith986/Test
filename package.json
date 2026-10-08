@@ -1,0 +1,22 @@
+{
+  "name": "pindrop-personal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted, single-user toolkit to find local businesses without websites, build sites for them, host them, and bill the owners.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pindrop · Personal</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <form id="login-form" class="card">
+    <h1>📍 Pindrop</h1>
+    <p class="muted">Your personal toolkit for building and selling websites to local businesses.</p>
+    <label>Password <input type="password" name="password" autocomplete="current-password" required autofocus></label>
+    <button class="btn">Log in</button>
+    <p class="error" id="login-error"></p>
+  </form>
+</div>
+
+<div id="shell" class="shell" hidden>
+  <aside class="sidebar">
+    <div class="logo">📍 Pindrop</div>
+    <nav id="nav">
+      <a href="#/dashboard" data-route="dashboard">🏠 <span>Dashboard</span></a>
+      <a href="#/find" data-route="find">🗺️ <span>Find leads</span></a>
+      <a href="#/leads" data-route="leads">📋 <span>Leads</span></a>
+      <a href="#/sites" data-route="sites">🌐 <span>Sites</span></a>
+      <a href="#/inbox" data-route="inbox">📥 <span>Inbox</span> <b class="badge" id="inbox-badge" hidden></b></a>
+      <a href="#/billing" data-route="billing">💵 <span>Billing</span></a>
+      <a href="#/settings" data-route="settings">⚙️ <span>Settings</span></a>
+    </nav>
+  </aside>
+  <main id="view" class="view"></main>
+</div>
+
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="/app.js" type="module"></script>
+</body>
+</html>
